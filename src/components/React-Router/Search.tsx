@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom"
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
 
 const Search = () => {
     const [searchParams, setSearchParams] = useSearchParams();
