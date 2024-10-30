@@ -1,8 +1,18 @@
-import React from 'react'
+import { useNavigate } from "react-router-dom";
+import { Button } from "./ui/button"
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.removeItem("login");
+        navigate("/login");
+    }
     return (
-        <div>Home</div>
+        <div>
+            Home
+            <Button onClick={handleLogout}>Logout</Button>
+        </div>
     )
 }
 
